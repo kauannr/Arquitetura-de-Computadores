@@ -17,6 +17,7 @@ Na última etapa do projeto, a ULA foi modificada para receber palavras de 21 bi
 - Controle da ULA: 8 bits
 - Controle do barramento C: 9 bits
 - Controle do barramento B: 4 bits
+  
 Por exemplo, a instrução 001101001010000000000
 Os últimos 4 bits definem que o registrador MDR está comandando o barramento B. Logo, a entrada B da ULA será B = MDR. Os 8 primeiros bits definem que a ULA executará uma operação do tipo Sd = B. Como B = MDR, tem-se que Sd = MDR. E por fim, os 9 bits do meio definem que os registradores H e TOS estão habilitados para escrita, de modo que o valor da ULA passará para eles, ou seja, ao final da operação tem-se que H = MDR e TOS = MDR.
 
